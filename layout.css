@@ -1,0 +1,137 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and background */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;  /* Soft light gray background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+  }
+  
+  /* Navigation Styles */
+  header {
+    background-color: #2C3E50;  /* Darker blue for the header */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #3498db; /* Bright blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+  }
+  
+  /* Main content area */
+  main {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Flexbox layout for content */
+  .content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 {
+    font-size: 1.8rem;
+    color: #2980b9; /* Beautiful blue color */
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 40px;
+    border-top: 5px solid #3498db; /* Bright blue border for footer */
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Tablet view (up to 768px) */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .card {
+      flex: 1 1 90%;
+    }
+  }
+  
+  /* Mobile view (up to 480px) */
+  @media (max-width: 480px) {
+    nav ul li {
+      margin: 5px 0;
+    }
+    
+    .card {
+      flex: 1 1 100%;
+      padding: 15px;
+    }
+    
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
